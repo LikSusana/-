@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>给特别的你</title>
+    <style>
+        body { 
+            background: pink; 
+            text-align: center; 
+            font-family: cursive; 
+            padding-top: 100px;
+        }
+        #message { 
+            display: none;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>💖 我有话想对你说 💖</h1>
+    <button onclick="showMessage()">点击查看</button>
+    <div id="message">
+        <p>从第一次见到你，我的世界就有了颜色</p>
+        <p>你愿意成为我生命中的永恒吗？</p>
+        <p>❤️</p>
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDk0bWJtZ3VrY3V6eWZ1dGJ5dWx4Z2JtYzZ4NnA2cmR6eGZ1bmZ1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26n6WywJyh39n1pBu/giphy.gif" width="200">
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+            document.querySelector('button').style.display = 'none';
+            // 播放音乐
+            new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3').play();
+        }
+    </script>
+</body>
+</html>
